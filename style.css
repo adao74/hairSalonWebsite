@@ -1,0 +1,102 @@
+body {
+    position: relative;
+}
+
+body > * {
+    width: 1060px;
+    margin: 50px 25%;
+    background-color: lightblue;
+}
+
+header {
+    margin: 0px;
+    background-color: turquoise;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+header article {
+    background-color: navy;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+#head {
+    background-color: navy;
+    color: white;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+#top {
+    height: 300px;
+    border: 5px turquoise solid;
+    position: relative;
+    margin: 0px 30px;
+}
+
+#top p {
+    position: absolute;
+    background-color: pink;
+    right: 5%;
+    top: 10%;
+}
+
+img {
+    max-height: 100%;
+}
+
+#middle {
+    display: flex;
+}
+
+#middle article {
+    margin: 30px;
+}
+
+#middle article div {
+    height: 160px;
+    width: 200px;
+}
+
+#middle img {
+    border: turquoise 5px solid;
+    height: 100%;
+    width: 100%;
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+#bottom > section {
+    border: 5px turquoise solid;
+    position: relative;
+}
+
+#bottom h2 {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+
+}
+
+#bottom img {
+    height: 50px;
+    width: 50px;
+}
+
+.label {
+    background-color: navy;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
