@@ -21,9 +21,10 @@ header div {
     /* background-color: pink; */
 }
 
-header article {
+header a {
     background-color: #1B2130;
     color: white;
+    text-decoration: none; /* by default, links are underlined, so need to specify none if you don't want links underlined */
     margin: 80px 30px 0 0px;
     padding: 5px 15px;
     border-radius: 5px;
