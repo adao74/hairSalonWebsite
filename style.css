@@ -3,44 +3,69 @@ body {
 }
 
 body > * {
-    width: 1060px;
     margin: 50px 25%;
     background-color: lightblue;
 }
 
 header {
-    margin: 0px;
-    background-color: turquoise;
-    height: 100px;
-    display: flex;
-    flex-direction: row-reverse;
+    margin: 0px; /* overrides the margin for body child elements */
+    background-color: #4C8F96;
+    height: 150px;
     width: 100%;
 }
 
+header div {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 25%;
+    /* background-color: pink; */
+}
+
 header article {
-    background-color: navy;
+    background-color: #222842;
     color: white;
-    margin: 20px;
+    margin: 80px 30px 0 30px;
     padding: 10px;
+    border-radius: 5px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    text-transform: uppercase;
 }
 
 #home {
-    background-color: green;
+    background-color: #335F64;
 }
 
 #head {
-    background-color: navy;
+    background-color: #222842;
     color: white;
-    width: 150px;
-    height: 40px;
+    width: 200px;
+    height: 120px;
+
+    text-align: center;
+    align-content: center;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: 250%;
+
     position: absolute;
-    top: 80px;
-    left: 50px;
+
+    /* note that there is a margin, so not actually 0px from the top/left of its parent element*/
+    top: 0px; 
+    left: 30px;
 }
 
 #top {
     height: 300px;
-    border: 5px turquoise solid;
+    border: 5px #5FB3BD solid;
     position: relative;
     margin: 0px 30px;
 }
@@ -70,7 +95,7 @@ img {
 }
 
 #middle img {
-    border: turquoise 5px solid;
+    border: #6DB8C1 5px solid;
     height: 100%;
     width: 100%;
 }
@@ -86,7 +111,12 @@ img {
 }
 
 #bottom-left, #bottom-right > article {
-    border: 5px turquoise solid;
+    border: 5px #5FB3BD solid;
+}
+
+#bottom-right > article {
+    background-color: #519194;
+    color: white;
 }
 
 #bottom h2 {
@@ -118,7 +148,7 @@ img {
 }
 
 .label {
-    background-color: navy;
+    background-color: #1C2137;
     color: white;
     width: 100px;
     height: 50px;
@@ -134,12 +164,24 @@ footer {
     position: relative;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    background-color: #4C8F96;
 }
 
 footer p {
     grid-column: 4/span 1;
+    align-content: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
 }
 
 footer div {
     grid-column: 5/span 1;
+    background-color: #387A82;
+    margin: 30px;
+    padding: 30px;
 }
