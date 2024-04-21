@@ -1,0 +1,103 @@
+body {
+    position: relative;
+}
+
+body > * {
+    margin: 50px 17%;
+    background-color: lightblue;
+}
+
+header {
+    margin: 0; /* overrides the margin for body child elements */
+    background-color: #4C8F96;
+    height: 150px;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 17%;
+    /* background-color: pink; */
+}
+
+header article {
+    background-color: #1B2130;
+    color: white;
+    margin: 80px 30px 0 0px;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    text-transform: uppercase;
+}
+
+#home {
+    background-color: #335F64;
+}
+
+#head {
+    background-color: #222842;
+    color: white;
+    width: 250px;
+    height: 120px;
+
+    text-align: center;
+    align-content: center;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: 400%;
+
+    position: absolute;
+
+    /* note that there is a margin, so not actually 0px from the top/left of its parent element*/
+    top: 0px; 
+    left: 30px;
+}
+
+img {
+    max-height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    position: relative;
+
+    background-color: #4C8F96;
+
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+    font-size: 75%;
+}
+
+
+footer div {
+    background-color: #387A82;
+    position: absolute;
+    top: 27%;
+    bottom: 20%;
+    right: 17%;
+
+    padding: 20px;
+}
+
+footer img {
+    margin: 0 5px;
+}
