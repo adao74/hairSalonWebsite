@@ -24,6 +24,10 @@ header article {
     padding: 10px;
 }
 
+#home {
+    background-color: green;
+}
+
 #head {
     background-color: navy;
     color: white;
@@ -78,8 +82,11 @@ img {
 }
 
 #bottom > section {
-    border: 5px turquoise solid;
     position: relative;
+}
+
+#bottom-left, #bottom-right > article {
+    border: 5px turquoise solid;
 }
 
 #bottom h2 {
@@ -89,9 +96,25 @@ img {
 
 }
 
-#bottom img {
+#bottom-left img {
     height: 50px;
     width: 50px;
+    margin: 30px;
+}
+
+#bottom-right img {
+    height: 100px;
+    width: 100px;
+}
+
+#bottom-right article:nth-last-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#mike {
+    text-align: right;
+    padding: 20px;
 }
 
 .label {
@@ -99,4 +122,24 @@ img {
     color: white;
     width: 100px;
     height: 50px;
+
+    position: absolute;
+    top: -30px;
+    left: 10px;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+footer p {
+    grid-column: 4/span 1;
+}
+
+footer div {
+    grid-column: 5/span 1;
 }
