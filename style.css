@@ -3,12 +3,12 @@ body {
 }
 
 body > * {
-    margin: 50px 25%;
+    margin: 50px 17%;
     background-color: lightblue;
 }
 
 header {
-    margin: 0px; /* overrides the margin for body child elements */
+    margin: 0; /* overrides the margin for body child elements */
     background-color: #4C8F96;
     height: 150px;
     width: 100%;
@@ -17,15 +17,15 @@ header {
 header div {
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 25%;
+    margin-right: 17%;
     /* background-color: pink; */
 }
 
 header article {
-    background-color: #222842;
+    background-color: #1B2130;
     color: white;
-    margin: 80px 30px 0 30px;
-    padding: 10px;
+    margin: 80px 30px 0 0px;
+    padding: 5px 15px;
     border-radius: 5px;
 
     font-family: "Inter", sans-serif;
@@ -44,7 +44,7 @@ header article {
 #head {
     background-color: #222842;
     color: white;
-    width: 200px;
+    width: 250px;
     height: 120px;
 
     text-align: center;
@@ -54,7 +54,7 @@ header article {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 4px;
-    font-size: 250%;
+    font-size: 400%;
 
     position: absolute;
 
@@ -160,15 +160,16 @@ img {
 
 footer {
     width: 100%;
+    height: 120px;
     margin: 0;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr); */
     background-color: #4C8F96;
 }
 
-footer p {
-    grid-column: 4/span 1;
+footer {
+    text-align: center;
     align-content: center;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -177,11 +178,20 @@ footer p {
     font-style: normal;
     font-variation-settings:
       "width" 100;
+    font-size: 75%;
 }
 
+
 footer div {
-    grid-column: 5/span 1;
     background-color: #387A82;
-    margin: 30px;
-    padding: 30px;
+    position: absolute;
+    top: 27%;
+    bottom: 20%;
+    right: 17%;
+
+    padding: 20px;
+}
+
+footer img {
+    margin: 0 5px;
 }
