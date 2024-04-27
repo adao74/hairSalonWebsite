@@ -38,7 +38,7 @@ header a {
     text-transform: uppercase;
 }
 
-#home {
+#news {
     background-color: #335F64;
 }
 
@@ -64,103 +64,8 @@ header a {
     left: 30px;
 }
 
-#top {
-    height: 300px;
-    border: 5px #5FB3BD solid;
-    position: relative;
-    margin: 0px 30px;
-}
-
-#top p {
-    position: absolute;
-    background-color: pink;
-    right: 5%;
-    top: 10%;
-}
-
 img {
     max-height: 100%;
-}
-
-#middle {
-    display: flex;
-}
-
-#middle article {
-    margin: 30px;
-}
-
-#middle article div {
-    height: 160px;
-    width: 200px;
-}
-
-#middle img {
-    border: #6DB8C1 5px solid;
-    height: 100%;
-    width: 100%;
-}
-
-#bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-}
-
-#bottom > section {
-    position: relative;
-}
-
-#bottom-left, #bottom-right > article {
-    border: 5px #5FB3BD solid;
-}
-
-#bottom-right > article {
-    background-color: #519194;
-    color: white;
-}
-
-#bottom h2 {
-    position: absolute;
-    right: 40px;
-    top: 30px;
-
-}
-
-#bottom-left img {
-    height: 50px;
-    width: 50px;
-    margin: 30px;
-}
-
-#bottom-right img {
-    height: 100px;
-    width: 100px;
-}
-
-#bottom-right article:nth-last-of-type(1) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-#mike {
-    text-align: right;
-    padding: 20px;
-}
-
-.label {
-    background-color: #1C2137;
-    color: white;
-    width: 100px;
-    height: 50px;
-
-    position: absolute;
-    top: -30px;
-    left: 10px;
-
-    font-family: "Cantarell", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 footer {
@@ -196,4 +101,43 @@ footer div {
 
 footer img {
     margin: 0 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 50px;
+}
+
+#right {
+    border: 5pt solid #5CB4BE;
+    border-radius: 4pt;
+    padding: 0 10pt 80pt 10pt;
+}
+
+#right h1 {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2F394E;
+    text-align: center;
+
+    /* background-color: yellow; */
+    margin-bottom: 20pt;
+}
+
+#right h3 {
+    color: #2F394E;
+    /* background-color: pink; */
+    margin-bottom: 0;
+}
+
+
+#right h3:hover {
+    color: #335F64;
+}
+
+p {
+    /* background-color: orange; */
+    margin: 0;
 }
