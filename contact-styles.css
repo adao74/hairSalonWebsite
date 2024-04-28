@@ -1,5 +1,6 @@
 body {
     position: relative;
+    background-color: #EDEDED;
 }
 
 body > * {
@@ -107,6 +108,8 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 18pt;
+
+    color: #2F394E;
 }
 
 p {
