@@ -42,6 +42,10 @@ header a:hover {
     color: lightgrey;
 }
 
+#contact {
+    margin-right: 0;
+}
+
 #news {
     background-color: #335F64;
 }

@@ -41,6 +41,10 @@ header a:hover {
     color: lightgrey;
 }
 
+#contact {
+    margin-right: 0;
+}
+
 #about {
     background-color: #335F64;
 }
