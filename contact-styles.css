@@ -4,7 +4,7 @@ body {
 
 body > * {
     margin: 50px 17%;
-    background-color: lightblue;
+    margin-bottom: 500pt;
 }
 
 header {
@@ -59,9 +59,8 @@ header a {
 
     position: absolute;
 
-    /* note that there is a margin, so not actually 0px from the top/left of its parent element*/
+    /* note that there is a margin, so not actually 0px from the top of its parent element*/
     top: 0px; 
-    left: 30px;
 }
 
 img {
@@ -101,4 +100,34 @@ footer div {
 
 footer img {
     margin: 0 5px;
+}
+
+h1 {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 17pt;
+    color: #464646;
+    font-size: 10pt;
+    /* background-color:pink; */
+    margin: 0;
+    
+}
+
+.address {
+    font-size: 11pt;
+    line-height: 19pt;
+}
+
+main div {
+    margin-top: 25pt;
+}
+
+main a:visited {
+    color: #464646;
 }
