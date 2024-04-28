@@ -59,9 +59,8 @@ header a {
 
     position: absolute;
 
-    /* note that there is a margin, so not actually 0px from the top/left of its parent element*/
+    /* note that there is a margin, so not actually 0px from the top of its parent element*/
     top: 0px; 
-    left: 30px;
 }
 
 #top {
