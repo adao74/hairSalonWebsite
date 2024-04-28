@@ -38,6 +38,10 @@ header a {
     text-transform: uppercase;
 }
 
+header a:hover {
+    color: lightgrey;
+}
+
 #hairstyles {
     background-color: #335F64;
 }

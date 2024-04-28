@@ -131,3 +131,7 @@ main div {
 main a:visited {
     color: #464646;
 }
+
+header a:hover {
+    color: lightgrey;
+}
