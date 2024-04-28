@@ -1,5 +1,6 @@
 body {
     position: relative;
+    background-color: #EDEDED;
 }
 
 body > * {
@@ -68,21 +69,43 @@ header a:hover {
 }
 
 #top {
-    height: 300px;
-    border: 5px #5FB3BD solid;
-    position: relative;
-    margin: 0px 30px;
+    height: 350px;
+    border: 2px rgb(95,179,189) solid;
+    border-radius: 3pt;
+    margin: 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#top div {
+    background-image: url("assets/main-photo.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #top p {
-    position: absolute;
-    background-color: pink;
-    right: 5%;
-    top: 10%;
+    padding: 10%;
+    color: black;
+
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30pt;
+
+    line-height: 40pt;
 }
 
 img {
     max-height: 100%;
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 17pt;
+    color: #464646;
+    font-size: 10pt;
 }
 
 #middle {
@@ -90,24 +113,50 @@ img {
 }
 
 #middle article {
-    margin: 30px;
+    margin: 55px 20px 40px 0;
 }
 
-#middle article div {
+#middle div {
     height: 160px;
-    width: 200px;
+    width: 223px;
+
+    background-size: cover;
+    background-position: center;
+
+    border: rgb(95,179,189) 5px solid;
+    border-radius: 3pt;
 }
 
-#middle img {
-    border: #6DB8C1 5px solid;
-    height: 100%;
-    width: 100%;
+h2 {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18pt;
+    letter-spacing: -2px;
+
+    color: black;
+}
+
+#hair1 {
+    background-image: url("assets/hair1.jpg");
+}
+
+#hair2 {
+    background-image: url("assets/hair2.jpg");
+}
+
+#hair3 {
+    background-image: url("assets/hair3.jpg");
+}
+
+#hair4 {
+    background-image: url("assets/hair4.jpg");
 }
 
 #bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 20px;
 }
 
 #bottom > section {
@@ -115,7 +164,8 @@ img {
 }
 
 #bottom-left, #bottom-right > article {
-    border: 5px #5FB3BD solid;
+    border: 5px rgb(95,179,189) solid;
+    border-radius: 3pt;
 }
 
 #bottom-right > article {
@@ -125,45 +175,90 @@ img {
 
 #bottom h2 {
     position: absolute;
-    right: 40px;
-    top: 30px;
+    left: 30%;
+    top: 10%;
 
+    color: #354057;
+    letter-spacing: 0;
+}
+
+#bottom-left * {
+    margin: 0 15px 30px 15px;
+}
+
+#blurb {
+    margin: 80px 15px 0px 15px;
+}
+
+#mike {
+    margin: 15px 15px 20px 15px;
+    text-align: right;
+}
+
+#hairstyle {
+    margin-left: 15px;
 }
 
 #bottom-left img {
-    height: 50px;
-    width: 50px;
-    margin: 30px;
+    margin-top: 50px;
+    border-radius: 4px;
 }
 
-#bottom-right img {
+#bottom-left img {
     height: 100px;
     width: 100px;
 }
 
+#bottom-right img {
+    height: 220px;
+    width: 180px;
+    position: relative;
+    left: 7%;
+    top: 7%;
+}
+
 #bottom-right article:nth-last-of-type(1) {
+    margin-top: 25px;
+    
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-#mike {
-    text-align: right;
-    padding: 20px;
+#bottom-right p {
+    color: white;
+}
+
+#bottom-right a:visited {
+    color: white; 
+}
+
+
+#mike, #sad-man-text * {
+    font-size: 18px;
+}
+
+#sad-man-text {
+    letter-spacing: 1pt;
+    margin: 5% 10% 8% 10%;
 }
 
 .label {
     background-color: #1C2137;
     color: white;
-    width: 100px;
-    height: 50px;
+    width: 170px;
+    height: 45px;
 
     position: absolute;
-    top: -30px;
-    left: 10px;
+    top: -15px;
+    /* Note: even though don't specify left position, it's not 0 because there's a margin */
 
     font-family: "Cantarell", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    letter-spacing: 1px;
 }
 
 footer {

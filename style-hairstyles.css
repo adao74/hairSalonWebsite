@@ -1,10 +1,14 @@
 body {
     position: relative;
+    background-color: #EDEDED;
 }
 
 body > * {
     margin: 50px 17%;
-    background-color: lightblue;
+}
+
+main {
+    margin-bottom: 80pt;
 }
 
 header {
@@ -109,20 +113,95 @@ footer img {
 #hairstyle-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2pt;
+    row-gap: 15pt;
 }
 
 #hairstyle-container div {
-    height: 100pt;
-    width: 100pt;
-    border: 2pt solid rgb(95,179,189);
+    height: 130pt;
+    width: 160pt;
+
+    /* For making the image show up correctly */
+    background-size: cover;
+    background-position: center;
+
+    border: 4pt solid rgb(95,179,189);
 }
 
-#hairstyle-container img {
-    min-width: 100%;
-    /* min-height: 100%; */
-    filter: drop-shadow(0px 10px 10px black);
+#img1 {
+    background-image: url("assets/pic1.jpg");
 }
 
-#hairstyle-container img:hover {
+#img2 {
+    background-image: url("assets/pic2.jpg");
+}
+
+#img3 {
+    background-image: url("assets/pic3.jpg");
+}
+
+#img4 {
+    background-image: url("assets/pic4.jpg");
+}
+
+#img5 {
+    background-image: url("assets/pic5.jpg");
+}
+
+#img6 {
+    background-image: url("assets/pic6.jpg");
+}
+
+#img7 {
+    background-image: url("assets/pic7.jpg");
+}
+
+#img8 {
+    background-image: url("assets/pic8.jpg");
+}
+
+#img9 {
+    background-image: url("assets/pic9.jpg");
+}
+
+#img10 {
+    background-image: url("assets/pic10.jpg");
+}
+
+#img11 {
+    background-image: url("assets/pic11.jpg");
+}
+
+#img12 {
+    background-image: url("assets/pic12.jpg");
+}
+
+#img13 {
+    background-image: url("assets/pic13.jpg");
+}
+
+#img14 {
+    background-image: url("assets/pic14.jpg");
+}
+
+#img15 {
+    background-image: url("assets/pic15.jpg");
+}
+
+#img16 {
+    background-image: url("assets/pic16.jpg");
+}
+
+#hairstyle-container div:hover {
     filter: brightness(110%);
+}
+
+h1 {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18pt;
+
+    color: #2F394E;
+    margin-bottom: 20pt;
 }
