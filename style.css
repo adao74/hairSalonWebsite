@@ -123,7 +123,7 @@ p {
 
 #middle div {
     height: 160px;
-    width: 223px;
+    width: 100%;
 
     background-size: cover;
     background-position: center;
